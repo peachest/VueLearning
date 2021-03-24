@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id = 'app'>
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th>书籍名称</th>
+      <th>出版日期</th>
+      <th>单价</th>
+      <th>小结</th>
+      <th>购买数量</th>
+      <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(term, index) in terms">
+        <th>{{index+1}}</th>
+        <th>{{term.book.name}}</th>
+        <th>{{term.book.date}}</th>
+        <th>{{term.book.price | showprice}}</th>
+        <th>{{(term.bookcount * term.book.price) | showprice}}</th>
+        <th>
+          <button @click="decreatment(index)">-</button>
+<!--          {{term.bookcount}}-->
+          <input type = 'text' v-model.lazy.number.trim="term.bookcount">
+<!--          {{typeof term.bookcount}}-->
+<!--              <input type = 'text' v-bind:value = 'term.bookcount' v-on:input="countChange(index, $event)">-->
+<!--          <input type = 'text' v-bind:value = 'term.bookcount' v-on:input="term.bookcount = $event.target.value">-->
+          <button @click="increatment(index)">+</button>
+        </th>
+        <th><button @click="removeTerm(index)">移除</button></th>
+      </tr>
+    </tbody>
+  </table>
+  <h2>总价：{{totalPrice | showprice}}</h2>
+</div>
+
+<script src = "../js/vue.js"></script>
+<script src = "main.js"></script>
+</body>
+</html>

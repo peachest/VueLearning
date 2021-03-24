@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h1>{{message}}</h1>
+  <h2>子组件选择的是： {{choice}}</h2>
+  <cpn @childercpnclick="cpnclick"></cpn>
+</div>
+
+<template id="cpnTemplate">
+  <div>
+    <h1>这是子组件</h1>
+    <button v-for="term in games" @click="btnclick(term)">{{term}}</button>
+  </div>
+</template>
+
+<script src="../../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: "helloworld",
+      choice: '请点击子组件下的button',
+    },
+    computed: {
+      computedMessage() {
+        return "helloworld";
+      },
+    },
+    methods: {
+      getMessage() {
+        return "helloworld";
+      },
+      cpnclick(game)
+      {
+        this.choice = game
+      }
+    },
+    filters: {
+      showMessage(msg) {
+        return "msg";
+      },
+    },
+    components: {
+      cpn: {
+        template: '#cpnTemplate',
+        data() {   //组件的data必须是函数返回的对象
+          return {
+            games: ['deemo', "Deemo2", "Cytus", "Cytus2", "Lanota"],
+          }
+        },
+        methods: {
+          btnclick(game){
+            this.$emit('childercpnclick', game)
+          },
+        },
+      },
+
+    },
+  })
+</script>
+
+
+</body>
+</html>

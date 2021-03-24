@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h1>{{message}}</h1>
+  <cpn></cpn>
+  <cpn></cpn>
+</div>
+
+
+<template id="cpnT">
+  <div>
+    <h2>当前计数：{{count}}</h2>
+    <button @click="decreatment">-</button>
+    <button @click="increatment">+</button>
+  </div>
+</template>
+<script src="../../js/vue.js"></script>
+<script>
+
+  Vue.component('cpn', {
+    template: '#cpnT',
+    data(){
+      return {
+        count: 0,
+      }
+    },
+    methods:{
+      decreatment() {
+        this.count-- ;
+      },
+      increatment(){
+        this.count++ ;
+      },
+    }
+
+  })
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: "helloworld"
+    },
+  })
+</script>
+
+</body>
+</html>

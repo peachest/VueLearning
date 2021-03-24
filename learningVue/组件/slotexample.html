@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h1>{{message}}</h1>
+  <cpn>
+
+<!--    使用属性slot=“<slotname>”选择插入的插槽-->
+    <button slot="中间" @click="btnclick('中间')">中间</button>
+<!--选择插入的插槽，同时获取插槽的作用域（引用？），通过该作用域来获取子组件中插槽的数据，
+自定义页面标签-->
+    <template slot="list" slot-scope="slot">
+      <ol>
+        <li v-for="item in slot.game">+{{item}}+</li>
+      </ol>
+    </template>
+  </cpn>
+</div>
+
+
+<template id="cpnTemplate">
+  <div>
+    <h1>这是子组件</h1>
+    <slot name="左边"><span>左边</span></slot>
+    <slot name="中间"><span>中间</span></slot>
+    <slot name="右边"><span>右边</span></slot>
+    <slot name="list" :game="cMusicGames">
+      <ol>
+        <li v-for="item in cMusicGames">{{item}}</li>
+      </ol>
+    </slot>
+    <h1>子组件结束</h1>
+  </div>
+</template>
+
+<script src="../../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: "helloworld",
+    },
+    computed: {
+      computedMessage() {
+        return "helloworld";
+      },
+    },
+    methods: {
+      getMessage() {
+        return "helloworld";
+      },
+      btnclick(msg){
+        console.log(msg);
+      },
+    },
+    filters: {
+      showMessage(msg) {
+        return "msg";
+      },
+    },
+    components: {
+      cpn: {
+        template: '#cpnTemplate',
+        data() {   //组件的data必须是函数返回的对象
+          return {
+            cMusicGames: ['deemo', 'deemo2', 'cytus', 'cytus2', 'lanota'],
+          }
+        },
+        props: {   //父传递子的属性
+          aChildProperty: {    //属性类型为数组或对象时，初始值必须为函数返回值
+            type: Object, //类型
+            default() {  //默认值
+              return {}
+            },
+            required: false,  //父组件必须传递该属性给子组件
+            validator(value) { //自定义验证函数
+              return true
+            },
+          },
+        },
+      },
+
+    },
+  })
+</script>
+
+
+</body>
+</html>

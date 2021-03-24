@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h1>{{message}}</h1>
+  <cpn v-bind:cgame = "musicGames" :c-movies=""></cpn>
+</div>
+
+
+<template id="cpnT">
+  <div>
+    <h1>现在开始是子组件</h1>
+    <ol>
+      <li v-for="term in cgame">{{term}}</li>
+    </ol>
+    <h1>现在结束子组件</h1>
+  </div>
+</template>
+<script src="../../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: "从父组件传数据到子组件",
+      musicGames: ['deemo', 'deemo2', 'cytus', 'cytus2'],
+    },
+    components: {
+      cpn: {
+        template: '#cpnT',
+        // props: ['cgame', ],
+        props:{
+          cMovies: {//属性类型为数组或对象时，初始值必须为函数返回值
+            type: Array, //类型
+            author: superClass, //自定义类型
+            default(){  //默认值
+              return[]
+            },
+            required: false,  //父组件必须传递该属性给子组件
+            validator(value){ //自定义验证函数
+              return true
+            },
+          },
+          cmessage: {
+            type: String, //声明了属性的类型
+            default: 'defaultValue', //父组件没有传递该属性时默认的值
+            required: false, //父组件必须传递该属性给子组件
+          }
+
+        },
+        data(){
+          return{
+          }
+        }
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    li.highLight{
+      background-color: cyan;
+      color: darkorange;
+    }
+    li.normal{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="app">
+  <ol>
+    <li v-for="(game, index) in musicGames" v-on:click="changeStyle(index)" v-bind:class="getStyleClass(index)">{{game}}</li>
+  </ol>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      musicGames : ['cytus', 'deemo', 'cytus2', 'lanota'],
+      highLightClass: false,
+      normalClass: true,
+      current : -1
+    },
+    methods: {
+      changeStyle(index){
+        this.current = index
+      },
+      getStyleClass(index){
+        if (this.current == index)
+        return {highLight: true, normal: false} 
+        else
+          return {highLight: false, normal: true}
+      },
+    }
+  })
+</script>
+
+</body>
+</html>

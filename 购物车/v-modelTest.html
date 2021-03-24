@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h1>{{message}}</h1>
+<!--  <input type = 'text' v-model="count">-->
+<!--  <input type = 'text' v-bind:value = "count" v-on:input="count = $event.target.value">-->
+  <input type = 'text' v-bind:value = "count" v-on:input="countchange">
+  <h2>value of app.count = {{count}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: "helloworld",
+      count: 0,
+    },
+    methods:{
+      countchange($event){
+        this.count = $event.target.value ;
+      },
+    }
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<div id="app">
+  <h1>{{message}}</h1>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: "helloworld",
+    },
+    computed: {
+      computedMessage() {
+        return "helloworld";
+      },
+    },
+    methods: {
+      getMessage() {
+        return "helloworld";
+      },
+    },
+    filters: {
+      showMessage(msg) {
+        return "msg";
+      },
+    },
+    components: {
+      cpn: {
+        template: '#cpnTemplate',
+        data() {   //组件的data必须是函数返回的对象
+          return {}
+        },
+        props: {   //父传递子的属性
+          aChildProperty: {    //属性类型为数组或对象时，初始值必须为函数返回值
+            type: Object, //类型
+            author: superClass, //自定义类型
+            default() {  //默认值
+              return {}
+            },
+            required: false,  //父组件必须传递该属性给子组件
+            validator(value) { //自定义验证函数
+              return true
+            },
+          },
+        },
+      },
+
+    },
+  })
+</script>
