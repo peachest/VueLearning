@@ -38,20 +38,28 @@ import Vue from 'vue'
 
 //语法糖形式
 //将vue实例的template,data,methods抽出来作为一个单独的组件，并注册到对应的vue实例中
-const templateComponent = {
-  template:`
-  `,
-  data(){
-    return {}
-  },
-  methods:{
-    btnclick(){
-    }
-  }
-}
+// const templateComponent = {
+//   template:`
+//     <div>
+//       <h1>以下是vue实例</h1>
+//       <h2>{{message}}</h2>
+//     </div>
+//   `,
+//   data(){
+//     return {
+//       message: 'hello vue in main.js'
+//     }
+//   },
+//   methods:{
+//     btnclick(){
+//     }
+//   }
+// }
+// import templateComponent from '../vue/app.js'
+import templateComponent from '../vue/App.vue'
 new Vue({
   el: '#app',
-  template: '<templateComponent/>',
+  template: '<templateComponent></templateComponent>',
   components:{
     templateComponent,
   }

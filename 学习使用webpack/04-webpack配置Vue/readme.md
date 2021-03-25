@@ -75,5 +75,29 @@
     }
   ```
 
+### 版本问题
+
+vue-loader，版本在14以上需要安装vueloaderplugin。
+
+```javascript
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+module.exports = {
+  plugins: [   //配置插件的节点，所有插件都要在这里配置
+    new VueLoaderPlugin()
+  ]
+}
+```
+
+如果仍然出错，可能是webpack版本过高
+
+```
+npm uninstall webpack -g  删除全局的webpack
+npm uninstall webpack		删除项目中局部依赖的webpack
+npm install webpack@^4.44.2 -g  全局安装较低版本的webpack
+npm install webpack@^4.44.2
+```
+
+较低版本的webpack可能无法打包其他高版本的loader，如less-loader。因此需要使用npm卸载并重新安装低版本的loader
+
 ### webpack打包即可
 
