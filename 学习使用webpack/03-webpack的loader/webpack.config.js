@@ -40,7 +40,18 @@ module.exports = {
           //   loader: 'file-loader'
           // }
         ]
+      }, {
+        test: /\.js$/,
+        //排除编译以下包内的js文件的es6语法
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader', //将es6语法转换为es5
+          options: {
+            // presets: ['@babel/preset-env']
+            presets: ["es2015"],
+          }
+        }
       },
-    ]
+    ] //end of rule
   }
 }

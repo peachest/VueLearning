@@ -27,16 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1360ae6-317b-453e-b7aa-2563fca6e9a4" name="Default Changelist" comment="add 03-webpack的loader文件夹">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/css/special.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/npm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/dist/bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/mathUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/mathUtil.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +58,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -91,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616597952858</updated>
       <workItem from="1616597954096" duration="3381000" />
-      <workItem from="1616659124592" duration="2831000" />
+      <workItem from="1616659124592" duration="3728000" />
     </task>
     <task id="LOCAL-00001" summary="add 03-webpack的loader文件夹">
       <created>1616598507781</created>
@@ -138,6 +133,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add 03-webpack的loader文件夹" />
     <option name="LAST_COMMIT_MESSAGE" value="add 03-webpack的loader文件夹" />
   </component>
