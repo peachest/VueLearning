@@ -1,3 +1,7 @@
+body{
+    /*background-color: yellow;*/
+    background: url("../img/background.jpg") ;
+}
 h1{
     color: red;
 }

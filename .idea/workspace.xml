@@ -16,20 +16,28 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1360ae6-317b-453e-b7aa-2563fca6e9a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/dist/bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/mathUtil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/webpack.config.js" afterDir="false" />
+    <list default="true" id="a1360ae6-317b-453e-b7aa-2563fca6e9a4" name="Default Changelist" comment="add 03-webpack的loader文件夹">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/css/special.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/img/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/dist/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/mathUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/js/mathUtil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="Less File" />
       </list>
     </option>
   </component>
@@ -47,6 +56,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qCydLvNNbPG71BxynFfPvkY0Y1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,10 +68,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/学习使用webpack/03-webpack的loader/src/img" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\VueLearning\学习使用webpack\03-webpack的loader\src\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\Desktop\VueLearning\学习使用webpack\03-webpack的loader\src\js" />
     </key>
@@ -74,8 +90,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616597952858</updated>
-      <workItem from="1616597954096" duration="321000" />
+      <workItem from="1616597954096" duration="3381000" />
+      <workItem from="1616659124592" duration="2831000" />
     </task>
+    <task id="LOCAL-00001" summary="add 03-webpack的loader文件夹">
+      <created>1616598507781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616598507781</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add 03-webpack的loader文件夹">
+      <created>1616598539368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616598539368</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,16 +118,45 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add 03-webpack的loader文件夹" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 03-webpack的loader文件夹" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616598171987">
+    <state x="553" y="262" key="#Configure_Path_Variables" timestamp="1616659140863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616598171987" />
+    <state x="553" y="262" key="#Configure_Path_Variables/0.0.1536.824@0.0.1536.824" timestamp="1616659140863" />
+    <state x="424" y="188" key="EditFileWatcherDialog" timestamp="1616599926409">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="424" y="188" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1616599926409" />
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616598443498">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1616598443498" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1616660835131">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616660835131" />
   </component>
 </project>

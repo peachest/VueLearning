@@ -1,6 +1,9 @@
 function sum(num1, num2) {
   return num1 + num2 ;
 }
+function sub(num1, num2){
+  return num1 - num2 ;
+}
 function mul(num1, num2){
   return num1 * num2 ;
 }
@@ -17,8 +20,7 @@ let flag = true
 //
 // //导出方式 1
 export {
-  sum,
-  mul,
+  sum, sub, mul,
 }
 
 //导出变量, 导出的名字不能和原来的名字相同
