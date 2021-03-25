@@ -1,4 +1,6 @@
-# 配置一个项目
+# 
+
+配置一个项目
 
 [toc]
 
@@ -31,7 +33,7 @@
 
 ## 初始化
 
-* 执行命令“webpack init”，根据提示进行下一步，生成package.json
+* 执行命令“npm init”，根据提示进行下一步，生成package.json
 
 ## 安装本地局部包
 
@@ -98,6 +100,50 @@ npm install webpack@^4.44.2
 ```
 
 较低版本的webpack可能无法打包其他高版本的loader，如less-loader。因此需要使用npm卸载并重新安装低版本的loader
+
+
+
+
+
+出现，’tap‘错误，html-webpack-plugin版本可能过高，用4.0.0
+
+出现’es6‘错误，babel-loader版本可能过高，用7.0.0
+
+ this.getOptions is not a function
+    at Object.lessLoader ，lessloader版本过高
+
+
+
+### 使用html-webpack-plugin
+
+目的：将整个项目的入口放到dist发布文件夹中
+
+``` 
+npm install --save-dev html-webpack-plugin
+```
+
+
+
+
+```js
+//正确配置插件
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  output: {
+    //注释以前写的该行代码 
+    //publicPath: 'dist/',
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    }),
+  ]
+```
+
+
+
+使用项目文件夹中的index.html作为模板，生成dist/index.html的文件
 
 ### webpack打包即可
 

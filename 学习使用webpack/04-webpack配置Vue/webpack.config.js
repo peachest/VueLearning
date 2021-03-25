@@ -1,14 +1,19 @@
 const filepath = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/js/main.js',
   output: {
     path: filepath.resolve(__dirname, 'dist'),
     filename: "bundle.js",
-    publicPath: 'dist/',//涉及到url的调用都会在相对地址前拼接上该字符串，index.html放到dist；后就不需要该属性
+    // publicPath: 'dist/',//涉及到url的调用都会在相对地址前拼接上该字符串，index.html放到dist；后就不需要该属性
   },
   plugins: [   //配置插件的节点，所有插件都要在这里配置
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    }),
+
   ],
   module: {
     rules: [
