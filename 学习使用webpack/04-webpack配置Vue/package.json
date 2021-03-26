@@ -19,12 +19,14 @@
     "less": "^4.1.1",
     "less-loader": "^7.0.0",
     "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.1",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.2"
   },
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "webpack-dev-server": "^3.11.2"
   }
 }

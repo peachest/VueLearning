@@ -1,6 +1,7 @@
 const filepath = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: './src/js/main.js',
   output: {
@@ -13,7 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html'
     }),
-
+    new UglifyjsWebpackPlugin(),//压缩打包后生成的bundle.js
   ],
   module: {
     rules: [
@@ -74,5 +75,4 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
     },
   },
-
 }
