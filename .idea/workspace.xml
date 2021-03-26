@@ -26,9 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1360ae6-317b-453e-b7aa-2563fca6e9a4" name="Default Changelist" comment="add 03-webpack的loader文件夹">
-      <change beforePath="$PROJECT_DIR$/购物车/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/购物车/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="a1360ae6-317b-453e-b7aa-2563fca6e9a4" name="Default Changelist" comment="add 03-webpack的loader文件夹" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +89,7 @@
       <workItem from="1616659124592" duration="9001000" />
       <workItem from="1616684131282" duration="9232000" />
       <workItem from="1616723666320" duration="1808000" />
-      <workItem from="1616727133289" duration="18000" />
+      <workItem from="1616727133289" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="add 03-webpack的loader文件夹">
       <created>1616598507781</created>
