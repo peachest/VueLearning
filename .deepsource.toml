@@ -1,5 +1,15 @@
 version = 1
 
+exclude_patterns = [
+    "/dist/*.js",
+    "/dist/*.min.js"
+]
+
 [[analyzers]]
 name = "javascript"
 enabled = true
+
+  [analyzers.meta]
+  environment = ["nodejs"]
+  plugins = ["vue"]
+  style_guide = "standard"
