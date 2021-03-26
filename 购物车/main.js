@@ -3,11 +3,10 @@ function Book(name, date, price){
   this.date = date ;
   this.price = price ;
 }
-
-book1 = new Book('算法导论','2006-9',85.00)
-book2 = new Book('UNIX编程艺术','2006-2',59.00)
-book3 = new Book('编程珠玑','2008-10',39.00)
-book4 = new Book('代码大全','2006-3',128.00)
+let book1 = new Book('算法导论','2006-9',85.00)
+let book2 = new Book('UNIX编程艺术','2006-2',59.00)
+let book3 = new Book('编程珠玑','2008-10',39.00)
+let book4 = new Book('代码大全','2006-3',128.00)
 
 
 const app = new Vue({

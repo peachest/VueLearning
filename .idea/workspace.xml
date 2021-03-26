@@ -27,12 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1360ae6-317b-453e-b7aa-2563fca6e9a4" name="Default Changelist" comment="add 03-webpack的loader文件夹">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/学习使用webpack/04-webpack配置Vue/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/购物车/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/购物车/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +91,7 @@
       <workItem from="1616659124592" duration="9001000" />
       <workItem from="1616684131282" duration="9232000" />
       <workItem from="1616723666320" duration="1808000" />
+      <workItem from="1616727133289" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="add 03-webpack的loader文件夹">
       <created>1616598507781</created>
