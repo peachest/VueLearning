@@ -1,23 +1,49 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div id="app" class="body">
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
+
+    <Tabbar>
+      <tabbar-item path="/home">
+        <img slot="active-icon" src="">
+        <img slot="deactive-icon" src="">
+        <div slot="txt">首页</div>
+      </tabbar-item>
+
+      <tabbar-item path="/about">
+        <img slot="active-icon" src="">
+        <img slot="deactive-icon" src="">
+        <div slot="txt">关于</div>
+      </tabbar-item>
+
+      <tabbar-item path="/cart">
+        <img slot="active-icon" src="">
+        <img slot="deactive-icon" src="">
+        <div slot="txt">购物车</div>
+      </tabbar-item>
+
+      <tabbar-item path="/profile">
+        <img slot="active-icon" src="">
+        <img slot="deactive-icon" src="">
+        <div slot="txt">我的</div>
+      </tabbar-item>
+    </Tabbar>
   </div>
 </template>
 
 <script>
+import Tabbar from "./components/tabbar/Tabbar";
+import TabbarItem from "./components/tabbar/TabbarItem";
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    TabbarItem,
+    Tabbar
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import "./assets/css/base.css" ;
 </style>

@@ -1,10 +1,20 @@
 <template>
-  $END$
+  <thead>
+    <tr>
+      <th v-for="name of tableHeadNames">{{name}}</th>
+    </tr>
+  </thead>
 </template>
 
 <script>
   export default {
-    name: "CartHead"
+    name: "CartHead",
+    props:{
+      tableHeadNames:{
+        array,
+        required: true,
+      }
+    }
   }
 </script>
 

@@ -1,48 +1,45 @@
 <template>
   <div>
     <p>this is Cart</p>
-    <div>
-      <table>
-        <thead>
-        <tr>
-          <th></th>
-          <th>书籍名称</th>
-          <th>出版日期</th>
-          <th>单价</th>
-          <th>小结</th>
-          <th>购买数量</th>
-          <th>操作</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr v-for="(term, index) in terms">
-          <th>{{index+1}}</th>
-          <th>{{term.book.name}}</th>
-          <th>{{term.book.date}}</th>
-          <th>{{term.book.price | showprice}}</th>
-          <th>{{(term.bookcount * term.book.price) | showprice}}</th>
-          <th>
-            <button @click="decreatment(index)">-</button>
-            <!--          {{term.bookcount}}-->
-            <input type = 'text' v-model.lazy.number.trim="term.bookcount">
-            <!--          {{typeof term.bookcount}}-->
-            <!--              <input type = 'text' v-bind:value = 'term.bookcount' v-on:input="countChange(index, $event)">-->
-            <!--          <input type = 'text' v-bind:value = 'term.bookcount' v-on:input="term.bookcount = $event.target.value">-->
-            <button @click="increatment(index)">+</button>
-          </th>
-          <th><button @click="removeTerm(index)">移除</button></th>
-        </tr>
-        </tbody>
-      </table>
-      <h2>总价：{{totalPrice | showprice}}</h2>
-    </div>
+<!--    <div>-->
+<!--      I receive the message: {{msg}}-->
+<!--    </div>-->
+    <table>
+      <cart-head :table-head-names="tableHeadNames"></cart-head>
+    </table>
   </div>
 </template>
 
 <script>
+  import bus from '../../../bus' ;
+  import CartHead from "./CartHead"
+
   export default {
     name: "Cart",
+    data(){
+      return {
+        msg:'',
+        products:[]
+      }
+    },
+    props:{
+      tableHeadNames:{
+        array,
+        required: true,
+      }
+    },
+    components:{
+      CartHead,
+    },
+    activated() {
+      this.bbtn() ;
+    },
     methods:{
+      bbtn(){
+        bus.$on("HomeEmitMsg", msg=>{
+          this.msg = msg ;
+        })
+      },
       countChange(index, event){
         this.terms[index].bookcount = event.target.value ;
       },
